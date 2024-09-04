@@ -1,0 +1,128 @@
+
+    <!-- Normal Breadcrumb Begin -->
+    <section class="normal-breadcrumb set-bg" data-setbg="assets/img/normal-breadcrumb.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="normal__breadcrumb__text">
+                        <h2>Our Blog</h2>
+                        <p>Welcome to the official Anime blog.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Normal Breadcrumb End -->
+
+    <!-- Blog Section Begin -->
+    <section class="blog spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[0].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[0].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[0].BlogId }">{{Blogs[0].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[3].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[11].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[11].BlogId }">{{Blogs[11].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[4].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[4].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[4].BlogId }">{{Blogs[4].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[6].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[6].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[6].BlogId }">{{Blogs[6].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[9].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[9].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[9].BlogId }">{{Blogs[9].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[10].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[10].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[10].BlogId }">{{Blogs[10].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[1].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[1].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[1].BlogId }">{{Blogs[1].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[2].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[2].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[2].BlogId }">{{Blogs[2].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[5].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[5].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[5].BlogId }">{{Blogs[5].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[7].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[7].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[7].BlogId }">{{Blogs[7].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6">
+                            <div class="blog__item small__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[8].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[9].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[9].BlogId }">{{Blogs[9].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="blog__item set-bg" [style.backgroundImage]="'url(assets/img/blog/' + Blogs[11].CoverImage + ')'">
+                                <div class="blog__item__text">
+                                    <p><span class="icon_calendar"></span> {{Blogs[11].CreatedAt | date:'dd MMMM yyyy'}}</p>
+                                    <h4><a [routerLink]="['/blog-detail']" [queryParams]="{ id: Blogs[11].BlogId }">{{Blogs[11].Title}}</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog Section End -->

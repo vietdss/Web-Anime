@@ -1,0 +1,40 @@
+<!-- Header Section Begin -->
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="header__logo">
+                    <a [routerLink]="['']">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <div class="header__nav">
+                    <nav class="header__menu mobile-menu">
+                        <ul>
+                            <li class="active"><a [routerLink]="['']">Homepage</a></li>
+                            <li><a href="">Categories <span class="arrow_carrot-down"></span></a>
+                                <ul class="dropdown">
+                                    <li *ngFor="let c of Categories">
+                                        <a [routerLink]="['/categories']" [queryParams]="{ CategoryName: c.CategoryName}">{{ c.CategoryName }}</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a [routerLink]="['/blog']">Our Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="header__right">
+                    <a href="#" class="search-switch"><span class="icon_search"></span></a>
+                    <a [routerLink]="['/login']"><span class="icon_profile"></span></a>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu-wrap"></div>
+    </div>
+</header>
+<!-- Header End -->
